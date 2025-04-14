@@ -52,12 +52,6 @@ export default function ProductCard({ product, onAddToCart, onToggleFavorite, is
           {product.isHealthy && <Leaf size={16} className="text-green-500" fill="currentColor" />}
           {product.isFrequent && <Clock size={16} className="text-blue-500" />}
         </div>
-
-        {product.isOnSale && (
-          <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-            {discount}% DTO
-          </div>
-        )}
       </div>
 
       <div className="p-3 flex-grow flex flex-col">
